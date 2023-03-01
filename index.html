@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="lol.jpg">
+    <title>Fikii Web Link</title>
+    <style>
+        html, body, * {
+            padding: 0;
+            margin: 0;
+            font-family: monospace;
+        }
+        .box-terluar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            height: 100vh;
+            margin:0 auto;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .back-video {
+          position: fixed;
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
+          height: auto;
+          z-index: -100;
+        }
+        .box-saya {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding-bottom: 20px;
+        }
+        .box-saya img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            margin-bottom: 10px;
+        }
+        .box-link {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            gap: 8px;
+        }
+        .box-link button {
+            background-color: silver;
+            border: none;
+            padding: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 400ms ease-in-out;
+        }
+        .box-link button:hover {
+            background-color: #333333;
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box-terluar">
+      <video autoplay loop class="back-video" muted plays-inline>
+        <source src="loop.mp4" type="video/mp4">
+      </video>
+      <audio controls autoplay loop>
+        <source src="loop.mp3" type="audio/mp3">
+      </audio> 
+      <div class="box-saya">
+        <img src="fiki.jpg" />
+        <h1>FIKII</h1>
+        <p>✨ I'm Programmer! ✨</p>
+      </div>
+      <div class="box-link">
+        <button onclick="hayu('https://www.instagram.com/fkrarsy/?hl=id')">Instagram</button>
+        <button onclick="hayu('https://www.youtube.com/@fkrarsy/videos')">Youtube</button>
+        <button onclick="hayu('https://www.tiktok.com/@fikii58')">Tiktok</button>
+        <button onclick="hayu('https://open.spotify.com/user/314r647stphsi3gimysr2hbwfm7m')">Spotify</button>
+        <button onclick="hayu('https://github.com/zedsbx')">Github</button>
+      </div>
+    </div>
+    <script>
+        function hayu(kemana) {
+           window.open(kemana)
+        }
+    </script>
+  </body>
+</html>
